@@ -1,0 +1,61 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+
+a{
+    text-decoration: none;
+    color: $dark;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+.p-12{
+    padding: 12px;
+}
+
+.py-12{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.px-12{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.p-32{
+    padding: 32px;
+}
+
+.py-32{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.pt-32{
+    padding-top: 32px;
+}
+
+.pe-32{
+    padding-right: 32px;
+}
+
+.pb-32{
+    padding-bottom: 32px;
+}
+
+.ps-32{
+    padding-left: 32px;
+}
+
+.mt-12{
+    margin-top: 12px;
+}
