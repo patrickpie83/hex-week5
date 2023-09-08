@@ -5,56 +5,252 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
-    <script type="module" crossorigin src="/hex-week5/assets/main-71c30259.js"></script>
-    <link rel="stylesheet" href="/hex-week5/assets/main-accf464b.css">
+    <!-- font  CDN  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <!-- bootstrap reset CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- icon cdn -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script type="module" crossorigin src="/hex-week5/assets/main-fa4e9f2f.js"></script>
+    <link rel="stylesheet" href="/hex-week5/assets/main-b3fb9884.css">
   </head>
   <body>
-    <h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
-    <h1 class="index-title">我是首頁</h1>
+    <div class="d-flex">
+      <div class="bg-light d-flex flex-column pb-32" style="width: 23%;min-height: 100vh;">
+        <div class="pt-32 ps-32 pb-32">
+          <img src="/hex-week5/assets/logo-ANSWER-5336fb45.svg" alt="logo-ANSWER" style="height: 40px;width: 151px;">
+        </div>
 
-    <div class="card" style="width: 18rem">
-      <img src="/hex-week5/assets/cat-0c0689ae.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
-      </div>
-    </div>
+        <ul class="mt-12" >
 
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
+          <li class="mb-4" style="height: 32px;">
+            <a class="d-block ps-32 " href="#" >
+              <span class="material-icons  align-middle me-3">
+                assessment
+                </span>
+              Dashboard
+          </a>
+          </li>
+          <li class="mb-4" style="height: 32px;">
+            <a class="d-block ps-32 " href="#" >
+              <span class="material-icons   align-middle me-3">
+                question_answer
+              </span>
+              Question
+          </a>
+          </li>
+          <li class="mb-4" style="height: 32px;">
+            <a class="d-block ps-32 " href="#" >
+              <span class="material-icons   align-middle me-3">
+                assignment
+              </span>
+              Assignment
+          </a>
+          </li>
+          <li class="mb-4" style="height: 32px;">
+            <a class="d-block ps-32 " href="#" >
+              <span class="material-icons   align-middle me-3">
+                video_library
+                </span>
+              Course
+          </a>
+          </li>
+          <li class="mb-4" style="height: 32px;">
+            <a class="d-block ps-32 " href="#" >
+              <span class="material-icons   align-middle me-3">
+                supervisor_account
+              </span>
+              Admin
+          </a>
+          </li>
+          <li class="mb-4" style="height: 32px;">
+            <a class="d-block ps-32 " href="#" >
+              <span class="material-icons   align-middle me-3">
+                settings
+              </span>
+              Settings
+          </a>
+          </li>
 
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
+        </ul>
+
+        <div class="d-flex ps-32 mt-auto">
+          <img src="/hex-week5/assets/andychen-f14fef59.jpeg" alt="andychen" style="width: 40px;height: 40px;border-radius: 24px;">
+          <div class="ms-3">
+            <p>Andy Chen</p>
+            <p style="font-size: 14px;color: #6C757D;">andy0401@mail.com</p>
           </div>
         </div>
+
+      </div>
+
+      <div class="container m-0 p-32" style="width: 77%;">
+        <div class="d-flex pb-32">
+          <h4>Assignment</h4>
+          <a href="#" class="ms-5" style="font-size: 16px; line-height: 24px;">All Courses
+            <span class="material-icons align-middle">
+              expand_more
+            </span>
+          </a>
+          <div class="ms-auto">
+            <span class="material-icons me-4">
+              search
+            </span>
+            <span class="material-icons">
+              notifications_active
+            </span>
+          </div>
+        </div>
+        
+        <div class="mt-12 d-flex justify-content-between">
+
+          <div style="width: 34.8%;">
+            <div class="d-flex">
+              <p>All (4)</p>
+              <a href="">
+                <span class="material-icons">
+                  expand_more
+                </span>
+              </a>
+            </div>
+            <ul>
+              <li class="p-12 d-flex border" >
+                <div>
+                  <p style="font-size: 12px;line-height: 24px;color: #212529;">Chapter Assignment 2</p>
+                  <p style="font-size: 16px;line-height: 24px;color: #212529;">Please check this file…</p>
+                </div>
+                <div class="ms-auto">
+                  <p style="font-size: 12px;line-height: 24px;color: #212529;">4 hrs ago</p>
+                  <p style="font-size: 12px;line-height: 24px;color: #6C757D;">Emily Wang</p>
+                </div>
+              </li>
+              <li class="p-12 d-flex border" >
+                <div>
+                  <p style="font-size: 12px;line-height: 24px;color: #212529;">Chapter Assignment 1</p>
+                  <p style="font-size: 16px;line-height: 24px;color: #212529;">My Homework</p>
+                </div>
+                <div class="ms-auto">
+                  <p style="font-size: 12px;line-height: 24px;color: #212529;">12 hrs ago</p>
+                  <p style="font-size: 12px;line-height: 24px;color: #6C757D;">David Xu</p>
+                </div>
+              </li>
+              <li class="p-12 d-flex border" >
+                <div>
+                  <p style="font-size: 12px;line-height: 24px;color: #212529;">Final Assignment</p>
+                  <p style="font-size: 16px;line-height: 24px;color: #212529;">Have a problem with this…</p>
+                </div>
+                <div class="ms-auto">
+                  <p style="font-size: 12px;line-height: 24px;color: #212529;">18 hrs ago</p>
+                  <p style="font-size: 12px;line-height: 24px;color: #6C757D;">Tony Wei</p>
+                </div>
+              </li>
+              <li class="p-12 d-flex border" >
+                <div>
+                  <p style="font-size: 12px;line-height: 24px;color: #212529;">Final Assignment</p>
+                  <p style="font-size: 16px;line-height: 24px;color: #212529;">Did I do it right?</p>
+                </div>
+                <div class="ms-auto">
+                  <p style="font-size: 12px;line-height: 24px;color: #212529;">19 hrs ago</p>
+                  <p style="font-size: 12px;line-height: 24px;color: #6C757D;">Christina Lin</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div style="width: 63.5%;">
+            <p class="text-end" style="font-size: 15px;line-height: 30px;color: #6C757D;" >2 comments</p>
+
+            <div class="d-flex bg-light py-12 px-3 align-items-center border">
+              <div>
+                <p style="font-size: 12px;line-height: 24px;color: #212529;">Chapter Assignment 2 / HTML&CSS</p>
+                <p style="font-size: 16px;line-height: 24px;color: #212529;">Please check this file for me, thanks!</p>
+              </div>
+              <span class="ms-auto material-icons align-middle">
+                more_vert
+              </span>
+            </div>
+
+            <div class="border">
+              <div class="d-flex pt-3 ps-3 pb-3 pe-32">
+                <div>
+                  <img src="/hex-week5/assets/emilywang-cc5a821b.jpeg" alt="emilywang" style=" border-radius: 24px;width: 40px;height: 40px;background-size: cover;background-position: center center;">
+                </div>
+
+                
+                <div class="ms-2 border-bottom pb-3">
+                  <p style="font-size: 16px;line-height: 24px;">Emily Wang</p>
+                  <p style="font-size: 12px;line-height: 24px;color: #6C757D;">10:38 AM (4 hours ago)</p>
+                  <p style="font-size: 14px;line-height: 21px;">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the 
+                    <span class="text-success">div</span>
+                    is bigger than the height of the <span class="text-success">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. 
+                    <br>What is the gap or extra space below image?</p>
+                  <button type="button" class="btn border bg-light mt-3 py-2 px-12">
+                    <span class="material-icons me-2 align-middle">
+                      attach_file 
+                     </span>
+                     HW-2-David.zip</button>
+                </div>
+
+              </div>
+
+              <div class="d-flex pt-3 ps-3 pb-3 pe-32">
+                <div>
+                  <img src="/hex-week5/assets/andychen-f14fef59.jpeg" alt="emilywang" style="border-radius: 24px;width: 40px;height: 40px;background-size: cover;background-position: center center;">
+                </div>
+
+                
+                <div class="ms-2">
+                  <div class="d-flex">
+                    <div>
+                      <p style="font-size: 16px;line-height: 24px;">Andy Chen (You)</p>
+                      <p style="font-size: 12px;line-height: 24px;color: #6C757D;">13:24 AM (1 hours ago)</p>
+                    </div>
+                    <div class="ms-auto">
+                      <span class="material-icons me-4">
+                        star_outline
+                      </span>
+                      <span class="material-icons">
+                        edit
+                      </span>
+                    </div>
+                  </div>
+
+
+                  <p style="font-size: 14px;line-height: 21px;">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. <br><br>You can:<br><br> 　• adjust the <span class="text-success">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="text-success">middle</span> ) or <br>　• change the <span class="text-success">display</span> so it isn’t inline.</p>
+                  
+                </div>
+
+              </div>
+            </div>
+
+            <div class="d-flex mt-3">
+              <span class="material-icons me-4 align-middle">
+                chevron_left
+              </span>
+              <span class="material-icons align-middle">
+                chevron_right
+              </span>
+              <div class="ms-auto">
+                <button type="button" class="btn btn-outline-success">Mark as read</button>
+                <button type="button" class="btn btn-success">Reply</button>
+              </div>
+            </div>
+
+
+
+          </div>
+
+        </div>
+
+
+
       </div>
     </div>
 
-    <footer class="footer">我是 footer</footer>
+
     
   </body>
 </html>
