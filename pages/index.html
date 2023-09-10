@@ -17,12 +17,12 @@
   </head>
   <body>
     <div class="d-flex">
-      <div class="bg-light d-flex flex-column pb-32" style="width: 23%;min-height: 100vh;">
+      <div class="bg-light d-flex flex-column pb-32" style="width: 296px;min-height: 100vh;position: fixed;">
         <div class="pt-32 ps-32 pb-32">
           <img src="../assets/images/logo-ANSWER.svg" alt="logo-ANSWER" style="height: 40px;width: 151px;">
         </div>
 
-        <ul class="mt-12" >
+        <ul class="mt-12 myHover" >
 
           <li class="mb-4" style="height: 32px;">
             <a class="d-block ps-32 " href="#" >
@@ -85,7 +85,7 @@
 
       </div>
 
-      <div class="container m-0 p-32" style="width: 77%;">
+      <div class="container p-32" style="margin-left: 296px;">
         <div class="d-flex pb-32">
           <h4>Assignment</h4>
           <a href="#" class="ms-5" style="font-size: 16px; line-height: 24px;">All Courses
@@ -114,8 +114,8 @@
                 </span>
               </a>
             </div>
-            <ul>
-              <li class="p-12 d-flex border" >
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action p-12 d-flex rounded-0">
                 <div>
                   <p style="font-size: 12px;line-height: 24px;color: #212529;">Chapter Assignment 2</p>
                   <p style="font-size: 16px;line-height: 24px;color: #212529;">Please check this file…</p>
@@ -124,8 +124,8 @@
                   <p style="font-size: 12px;line-height: 24px;color: #212529;">4 hrs ago</p>
                   <p style="font-size: 12px;line-height: 24px;color: #6C757D;">Emily Wang</p>
                 </div>
-              </li>
-              <li class="p-12 d-flex border" >
+              </a>
+              <a href="#" class="list-group-item list-group-item-action p-12 d-flex  rounded-0">
                 <div>
                   <p style="font-size: 12px;line-height: 24px;color: #212529;">Chapter Assignment 1</p>
                   <p style="font-size: 16px;line-height: 24px;color: #212529;">My Homework</p>
@@ -134,8 +134,8 @@
                   <p style="font-size: 12px;line-height: 24px;color: #212529;">12 hrs ago</p>
                   <p style="font-size: 12px;line-height: 24px;color: #6C757D;">David Xu</p>
                 </div>
-              </li>
-              <li class="p-12 d-flex border" >
+              </a>
+              <a href="#" class="list-group-item list-group-item-action p-12 d-flex rounded-0">
                 <div>
                   <p style="font-size: 12px;line-height: 24px;color: #212529;">Final Assignment</p>
                   <p style="font-size: 16px;line-height: 24px;color: #212529;">Have a problem with this…</p>
@@ -144,8 +144,8 @@
                   <p style="font-size: 12px;line-height: 24px;color: #212529;">18 hrs ago</p>
                   <p style="font-size: 12px;line-height: 24px;color: #6C757D;">Tony Wei</p>
                 </div>
-              </li>
-              <li class="p-12 d-flex border" >
+              </a>
+              <a href="#" class="list-group-item list-group-item-action p-12 d-flex rounded-0">
                 <div>
                   <p style="font-size: 12px;line-height: 24px;color: #212529;">Final Assignment</p>
                   <p style="font-size: 16px;line-height: 24px;color: #212529;">Did I do it right?</p>
@@ -154,8 +154,8 @@
                   <p style="font-size: 12px;line-height: 24px;color: #212529;">19 hrs ago</p>
                   <p style="font-size: 12px;line-height: 24px;color: #6C757D;">Christina Lin</p>
                 </div>
-              </li>
-            </ul>
+              </a>
+            </div>
           </div>
 
           <div style="width: 63.5%;">
@@ -172,6 +172,7 @@
             </div>
 
             <div class="border">
+              <!-- student 區塊 -->
               <div class="d-flex pt-3 ps-3 pb-3 pe-32">
                 <div>
                   <img src="../assets/images/emilywang.jpeg" alt="emilywang" style=" border-radius: 24px;width: 40px;height: 40px;background-size: cover;background-position: center center;">
@@ -194,50 +195,100 @@
 
               </div>
 
-              <div class="d-flex pt-3 ps-3 pb-3 pe-32">
-                <div>
-                  <img src="../assets/images/andychen.jpeg" alt="emilywang" style="border-radius: 24px;width: 40px;height: 40px;background-size: cover;background-position: center center;">
-                </div>
-
-                
-                <div class="ms-2">
-                  <div class="d-flex">
-                    <div>
-                      <p style="font-size: 16px;line-height: 24px;">Andy Chen (You)</p>
-                      <p style="font-size: 12px;line-height: 24px;color: #6C757D;">13:24 AM (1 hours ago)</p>
-                    </div>
-                    <div class="ms-auto">
-                      <span class="material-icons me-4">
-                        star_outline
-                      </span>
-                      <span class="material-icons">
-                        edit
-                      </span>
-                    </div>
+              <!-- teacher reply區塊 -->
+              <div class="collapse show" id="collapseReply">
+                <div class="d-flex pt-3 ps-3 pb-3 pe-32 " >
+                  <div>
+                    <img src="../assets/images/andychen.jpeg" alt="andychen" style="border-radius: 24px;width: 40px;height: 40px;background-size: cover;background-position: center center;">
                   </div>
-
-
-                  <p style="font-size: 14px;line-height: 21px;">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. <br><br>You can:<br><br> 　• adjust the <span class="text-success">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="text-success">middle</span> ) or <br>　• change the <span class="text-success">display</span> so it isn’t inline.</p>
+  
                   
+                  <div class="ms-2">
+                    <div class="d-flex">
+                      <div>
+                        <p style="font-size: 16px;line-height: 24px;">Andy Chen (You)</p>
+                        <p style="font-size: 12px;line-height: 24px;color: #6C757D;">13:24 AM (1 hours ago)</p>
+                      </div>
+                      <div class="ms-auto">
+                        <span class="material-icons me-4">
+                          star_outline
+                        </span>
+                        <span class="material-icons">
+                          edit
+                        </span>
+                      </div>
+                    </div>
+  
+  
+                    <p style="font-size: 14px;line-height: 21px;">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. <br><br>You can:<br><br> 　• adjust the <span class="text-success">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="text-success">middle</span> ) or <br>　• change the <span class="text-success">display</span> so it isn’t inline.</p>
+                    
+                  </div>
+  
                 </div>
-
               </div>
+              
+
+              <!-- teacher edit區塊＋折疊edit -->
+              <div class="collapse" id="collapseReply">
+                <div class="position-relative" style="height: 317px;">
+                  <div class="d-flex bg-light border-bottom border-top py-3 ps-4" style="height: 56px;">
+                    <span class="me-2">Body Text</span>
+                    <span class="material-icons me-4">
+                      expand_more
+                    </span>
+                    <span class="material-icons me-4">
+                      format_bold
+                    </span>
+                    <span class="material-icons me-4">
+                      format_italic
+                    </span>
+                    <span class="material-icons me-4">
+                      format_list_bulleted
+                    </span>
+                    <span class="material-icons me-4">
+                      format_list_numbered
+                    </span>
+                    <span class="material-icons me-4">
+                      insert_photo
+                    </span>
+                    <span class="material-icons me-4">
+                      insert_link
+                    </span>
+                    <span class="material-icons">
+                      code
+                    </span>
+                      
+                  </div>
+                  <div class="input-group">
+                    <textarea class="form-control pt-3 px-4 border-0 rounded-0" style="height: 196px;" placeholder="Reply an answer…" ></textarea>
+                  </div>
+                  <div class="position-absolute end-0 bottom-0 translate-middle">
+                    <button type="button" class="btn btn-outline-success" data-bs-toggle="collapse" data-bs-target="#collapseReply" aria-expanded="false" aria-controls="collapseReply">Cancel</button>
+                    <button type="button" class="btn btn-success">Reply</button>
+                  </div>
+                </div>
+              </div>
+              
+              
             </div>
 
-            <div class="d-flex mt-3">
-              <span class="material-icons me-4 align-middle">
-                chevron_left
-              </span>
-              <span class="material-icons align-middle">
-                chevron_right
-              </span>
-              <div class="ms-auto">
-                <button type="button" class="btn btn-outline-success">Mark as read</button>
-                <button type="button" class="btn btn-success">Reply</button>
+            <!-- 折疊reply -->
+            <div class="collapse show" id="collapseReply">
+              <div class="d-flex mt-3 " >
+                <span class="material-icons me-4 align-middle">
+                  chevron_left
+                </span>
+                <span class="material-icons align-middle">
+                  chevron_right
+                </span>
+  
+                <div class="ms-auto">
+                  <button type="button" class="btn btn-outline-success">Mark as read</button>
+                  <button type="button" class="btn btn-success" data-bs-toggle="collapse" data-bs-target="#collapseReply" aria-expanded="false" aria-controls="collapseReply">Reply</button>
+                </div>
               </div>
             </div>
-
-
+            
 
           </div>
 
