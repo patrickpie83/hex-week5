@@ -1,7 +1,7 @@
 .myHover li:hover::before{
 
   content:"";
-  height: 32px;
+  height: 26px;
   width: 4px;
   background-color: $primary;
   position: absolute;
